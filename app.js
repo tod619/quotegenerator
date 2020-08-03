@@ -4,11 +4,11 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
-const laoder = document.getElementById('loader');
+const loader = document.getElementById('loader');
 
 // Show loading
 function loading() {
-	laoder.hidden = false;
+	loader.hidden = false;
 	quoteContainer.hidden = true;
 }
 
@@ -16,7 +16,7 @@ function loading() {
 function complete() {
 	if (!loader.hidden) {
 		quoteContainer.hidden = false;
-		laoder.hidden = true;
+		loader.hidden = true;
 	}
 }
 
